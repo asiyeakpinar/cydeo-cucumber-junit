@@ -28,7 +28,7 @@ public class Hooks {
 
     }
     @After
-    public void tearDownScenario(Scenario scenario){
+    public void tearDownScenario(Scenario scenario)  {
 
        //scenario.isFailed()---> if scenario fails this method  will return true boolean value
         if(scenario.isFailed()) {
