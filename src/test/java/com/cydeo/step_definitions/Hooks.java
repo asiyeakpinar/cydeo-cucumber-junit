@@ -12,17 +12,17 @@ import org.openqa.selenium.TakesScreenshot;
 public class Hooks {
 
     //import before method from cucumber.java not from junit
-    @Before (order = 1)
+   // @Before (order = 1)
     public void setupScenario(){
         System.out.println("===setting up browser using cucumber @Before default everything");
 
     }
-    @Before (value = "@Login",order = 2)
+   // @Before (value = "@Login",order = 2)
     public void setupScenarioForLogins(){
         System.out.println("===setting up browser using cucumber @Before for login");
 
     }
-    @Before (value = "@db",order = 0)
+    //@Before (value = "@db",order = 0)
     public void setupDatabaseScenario(){
         System.out.println("===setting up browser using cucumber @Before for database");
 
@@ -43,12 +43,12 @@ public class Hooks {
        // System.out.println("====scenario ended/take a screenshot if failed");
 
     }
-    @BeforeStep
+   // @BeforeStep
     public void setupSteps(){
         System.out.println("----------------applying setup using @BeforeStep");
     }
 
-    @AfterStep
+  //  @AfterStep
     public void afterStep(){
         System.out.println("----------------applying setup using @AfterStep");
     }
